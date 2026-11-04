@@ -1,0 +1,199 @@
+<!--
+    路徑走法說明：
+    本 HTML 檔案位於根目錄。
+    相對路徑走法：從根目錄進入 "css" 資料夾，再讀取 "hw07.css"。
+-->
+<link rel="stylesheet" href="css/hw07.css">
+
+
+<!-- header 是頁首；id="top" 是下方「回到頁首」連結的目的地。 -->
+<header id="top">
+    <h1>東協廣場：台中市區的小東南亞冒險</h1>
+    <p>不用出國也能秒飛東南亞，週末聚餐與異國選物的好去處。</p>
+    <!-- time 的 datetime 以標準日期格式提供機器可讀的日期。 -->
+    <p>作者：張漢羽｜報導更新日期：<time datetime="2026-10-21">2026 年 11 月 4 日</time></p>
+    <p><small>本文為大學生日常探索與資料整理型專題，結合外部 CSS 排版與無障礙優化。</small></p>
+</header>
+
+<!-- nav 表示導覽區；href="#名稱" 會跳到本頁相同 id 的元素。 -->
+<nav aria-label="報導目錄">
+    <h2>報導目錄</h2>
+    <ul>
+        <li><a href="#intro">廣場簡介</a></li>
+        <li><a href="#highlights">大學生推薦亮點與逛街攻略</a></li>
+        <li><a href="#table">樓層與特色比較表</a></li>
+        <li><a href="#photo">東協廣場街景照片</a></li>
+        <li><a href="#video">影音報導</a></li>
+        <li><a href="#sources">資料來源</a></li>
+        <li><a href="#map">位置地圖</a></li>
+        <li><a href="#tips">走讀小提醒</a></li>
+    </ul>
+</nav>
+
+<!-- hr 表示內容主題的分隔 -->
+<hr>
+
+<!-- main 包住本頁主要內容；article 表示可獨立閱讀的完整報導。 -->
+<main>
+    <article aria-label="東協廣場專題報導">
+        <!-- section 將報導分成有標題的章節 -->
+        <section id="intro">
+            <h2>一、廣場簡介</h2>
+            <!-- 第一處行內樣式改為 class="intro-lead-text" -->
+            <p class="intro-lead-text">
+                位於台中火車站附近的<strong>東協廣場</strong>（舊稱第一廣場），
+                近年來成為在地移工、新住民與年輕學生感受多元文化的重鎮。
+                這裡聚集了各式東南亞超市、餐廳與通訊行，假日總是充滿熱鬧的異國氛圍。
+            </p>
+            <p>
+                對大學生來說，這裡不僅是尋找道地越南河粉、泰國奶茶或印尼泡麵的寶庫，
+                更是不用買機票就能體驗異國風情、週末和朋友聚餐拍照的好去處。
+            </p>
+            <p>
+                從在地歷史的轉變到如今多元文化交織的商場，東協廣場就像一本活生生的社會學教科書。
+                本篇整理了適合學生的逛街重點與口袋名單，帶大家一起探索這座市區裡的微型聯合國。
+            </p>
+            <p>廣場地址：台中市中區綠川西街 135 號。<br>閱讀重點：異國美食、東南亞超市與多元文化聚落。</p>
+        </section>
+
+        <section id="highlights">
+            <h2>二、大學生推薦亮點與逛街攻略</h2>
+            <h3>不可錯過的三個特色</h3>
+            <ul>
+                <li><strong>道地美食：</strong>從越南法國麵包、印尼炒麵到泰式料理應有盡有。</li>
+                <li><strong>異國超市：</strong>販售各種特色零食、泡麵與香料，適合喜歡嘗鮮的人。</li>
+                <li><strong>多元文化：</strong>假日滿街的異國語言與面孔，帶來濃厚的異國旅行感。</li>
+            </ul>
+
+            <h3>建議逛街攻略</h3>
+            <p>以下是本報導規劃的學生探索路線，適合週末半日遊。</p>
+            <ol>
+                <li>抵達台中火車站後步行前往，順便欣賞周邊舊城區街景。</li>
+                <li>直接搭電梯到各樓層尋找人氣東南亞超市，掃貨特色零食。</li>
+                <li>找家道地的越南咖啡廳或小吃店坐下來享用午餐。</li>
+                <li>餐後在周邊綠川或商場內散步拍照，記錄台中的多元面貌。</li>
+            </ol>
+        </section>
+
+        <section id="table">
+            <h2>三、樓層與特色比較表</h2>
+            <!-- 表格已移除舊式 border 屬性，改由 CSS 控制樣式 -->
+            <table>
+                <caption>東協廣場三處熱門區域與觀察重點</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">區域／店舖類型</th>
+                        <th scope="col">主要特色</th>
+                        <th scope="col">大學生推薦玩法</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">異國美食街區</th>
+                        <td>集結越南、印尼、泰國等道地小吃</td>
+                        <td>品嚐平價又道地的異國料理與手搖飲</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">東南亞超市</th>
+                        <td>販售進口零食、泡麵、調味料與生鮮</td>
+                        <td>買稀奇的異國零食回宿舍跟室友分享</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">周邊商場與廣場</th>
+                        <td>假日移工朋友聚會與舉辦活動的熱點</td>
+                        <td>感受多元文化交融的獨特城市氛圍</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="photo">
+            <h2>四、東協廣場街景照片</h2>
+            <figure>
+                <!-- 圖片採用響應式設定，寬度自適應避免超出畫面 -->
+                <img
+                    src="https://travel.taichung.gov.tw/image/31543/1024x768"
+                    alt="台中東協廣場外觀與街景"
+                    width="800">
+                <figcaption>
+                    東協廣場是台中體驗多元文化的指標地點。
+                    圖片來源：<a href="https://travel.taichung.gov.tw/zh-tw/attractions/intro/73" target="_blank" rel="noopener noreferrer">臺中觀光旅遊網</a>（示意圖）。
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="video">
+            <h2>五、影音報導</h2>
+            <p>透過下方影片更深入了解東協廣場的轉變與異國文化，再比較影片畫面與本文介紹的內容。</p>
+            <!-- 使用 class="media-video" 嚴格控制影音尺寸，確保畫面穩定響應 -->
+            <iframe
+                class="media-video"
+                src="https://www.youtube.com/embed/YysUiTO_WL8?si=_z7ehgb8PPLqjEA2" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+            <p>
+                若播放器無法播放，請
+                <a href="https://youtu.be/YysUiTO_WL8?si=_z7ehgb8PPLqjEA2" target="_blank" rel="noopener noreferrer">在 YouTube 觀看東協廣場介紹影片（另開分頁）</a>。
+            </p>
+            <p><small>影片為外部作者發布的採訪介紹，實際店鋪營業狀況請以現場為準。</small></p>
+        </section>
+
+        <section id="sources">
+            <h2>六、資料來源</h2>
+            <p>本報導依下列資料整理，逛街順序與大學生觀察建議由示範作者規劃。</p>
+            <ul>
+                <li><a href="https://travel.taichung.gov.tw/zh-tw/attractions/intro/73" target="_blank" rel="noopener noreferrer">臺中觀光旅遊網：東協廣場介紹</a></li>
+                <li><a href="https://www.verse.com.tw/article/taichung-tourism" target="_blank" rel="noopener noreferrer">verse雜誌</a></li>
+                <li><a href="https://youtu.be/YysUiTO_WL8?si=JSOg5K93cLh6_oVY" target="_blank" rel="noopener noreferrer">YouTube：東協廣場走讀影片</a></li>
+            </ul>
+            <p><small>資料整理更新日期：2026 年 11 月 4 日。</small></p>
+        </section>
+
+        <section id="map">
+            <h2>七、位置地圖：找到東協廣場</h2>
+            <p>東協廣場位於台中市中區，地址為<strong>綠川西街135號</strong>。
+                下方地圖標示本文介紹的地點位置，方便讀者對照景點與周邊街道。</p>
+            <!-- 使用 class="media-map" 確保地圖寬高比例在行動與桌機上均完美呈現 -->
+            <iframe
+                class="media-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.9240467811655!2d120.68129427603122!3d24.139305373733663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d1491da3bf1%3A0x5ef80ea12e1607b6!2z5p2x5Y2U5buj5aC0!5e0!3m2!1szh-TW!2stw!4v1791949032977!5m2!1szh-TW!2stw" 
+                title="東協廣場位置 Google 地圖"
+                loading="lazy" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+            <p><a href="https://maps.app.goo.gl/fQwPSiabCtPwGHjB6" target="_blank" rel="noopener noreferrer">在 Google 地圖開啟東協廣場（另開分頁）</a></p>
+            <p><small>位置查詢由 Google 地圖提供</small></p>
+        </section>
+
+        <!-- aside 放與報導相關的補充資訊 -->
+        <aside id="tips" aria-labelledby="tips-title">
+            <!-- 第二處行內樣式改為 class="tips-heading" -->
+            <h2 id="tips-title" class="tips-heading">走讀小提醒</h2>
+            <!-- 第三處行內樣式改為 class="tips-details" 與 class="tips-list" -->
+            <details open class="tips-details">
+                <summary>出發前與走讀時，記得這三件事</summary>
+                <ul class="tips-list">
+                    <li>攜帶飲用水，依天氣準備防曬或雨具。</li>
+                    <li>在東協廣場留意安全，尊重商家並保持環境整潔。</li>
+                    <li>以文字或照片記錄觀察；若寫入報導，區分現場觀察與引用資料。</li>
+                </ul>
+            </details>
+        </aside>
+
+    </article>
+</main>
+
+<hr>
+
+<footer>
+     <p><strong>第七次 HTML 與 CSS 作業範例｜東協廣場報導</strong></p>
+    <p><small>作者：張漢羽 · 更新日期：2026 年 11 月 4 日</small></p>
+    <p><small>CSS 教學參考：<a href="https://steam.oxxostudio.tw/category/css/info/how-to-use.html" target="_blank" rel="noopener noreferrer">STEAM：開始使用 CSS（方法一、方法二）</a>。</small></p>
+    <p><small>文字依來源整理；照片與影片權利屬原作者. 本文為課堂示範。</small></p>
+    <p><a href="#top">回到頁首</a></p>
+</footer>
+

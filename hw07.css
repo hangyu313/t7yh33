@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/*
+第七次作業：一頁式東協廣場響應式專題報導外部樣式表 (hw07.css)
+說明：本檔案由 HTML 內部  區塊遷移而來，並完成行內樣式的類別化重構。
+三處遷移說明：
+1. 廣場簡介開頭重點文字（原 style 屬性） -> 對應 .intro-lead-text 類別。
+2. 走讀小提醒標題與  文字（原 style 屬性） -> 對應 .tips-heading 與 .tips-details 類別。
+3. 頁尾作業編號與標題提示 -> 對應標準結構樣式。
+*/
+
+/* 1. 設定 body 的字型、行高、文字色、背景色與內容寬度，並確保 fluid 響應 */
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+line-height: 1.7;
+color: #2d3748;
+background-color: #f7fafc;
+max-width: 900px;
+margin: 0 auto;
+padding: 20px;
+}
+
+/* 2. 設定頁首、導覽、章節、補充資訊及頁尾的留白、背景與框線 */
+header {
+background-color: #ffffff;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+margin-bottom: 25px;
+border-left: 6px solid #3182ce;
+}
+
+nav {
+background-color: #ebf8ff;
+padding: 20px;
+border-radius: 8px;
+margin-bottom: 25px;
+border: 1px solid #bee3f8;
+}
+
+section {
+background-color: #ffffff;
+padding: 25px;
+border-radius: 10px;
+margin-bottom: 25px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+aside {
+background-color: #fffaf0;
+padding: 20px;
+border-radius: 8px;
+border: 1px solid #feebc8;
+margin-bottom: 25px;
+}
+
+footer {
+background-color: #2d3748;
+color: #edf2f7;
+text-align: center;
+padding: 25px;
+border-radius: 8px;
+margin-top: 30px;
+}
+
+footer a {
+color: #63b3ed;
+text-decoration: none;
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+
+/* 3. 設定標題、段落、清單、表格及圖說樣式，並用 CSS 取代舊式 border 屬性 */
+h1, h2, h3 {
+color: #1a202c;
+margin-top: 0;
+}
+
+h1 {
+font-size: 2.2rem;
+margin-bottom: 10px;
+}
+
+h2 {
+border-bottom: 2px solid #e2e8f0;
+padding-bottom: 8px;
+margin-top: 0;
+font-size: 1.5rem;
+}
+
+p {
+margin-bottom: 15px;
+}
+
+ul, ol {
+padding-left: 25px;
+margin-bottom: 15px;
+}
+
+li {
+margin-bottom: 8px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 15px 0;
+background-color: #ffffff;
+}
+
+th, td {
+border: 1px solid #cbd5e0;
+padding: 12px;
+text-align: left;
+}
+
+th {
+background-color: #edf2f7;
+color: #2d3748;
+}
+
+caption {
+font-weight: bold;
+margin-bottom: 8px;
+text-align: left;
+color: #4a5568;
+}
+
+figure {
+margin: 0;
+text-align: center;
+}
+
+figcaption {
+font-size: 0.9rem;
+color: #718096;
+margin-top: 8px;
+}
+
+/* 4. 用 class 區分影片與地圖樣式，調整圖片、影片、地圖寬度以防超出畫面 */
+img {
+max-width: 100%;
+height: auto;
+border-radius: 6px;
+}
+
+.media-video {
+width: 100%;
+max-width: 560px;
+height: 315px;
+border: none;
+border-radius: 8px;
+}
+
+.media-map {
+width: 100%;
+max-width: 100%;
+height: 450px;
+border: none;
+border-radius: 8px;
+}
+
+/* 5. 三處原行內樣式之類別宣告遷移 */
+.intro-lead-text {
+font-size: 1.1rem;
+font-weight: 500;
+color: #2b6cb0;
+}
+
+.tips-heading {
+margin-bottom: 10px;
+font-size: 1.2rem;
+}
+
+.tips-details {
+color: #744210;
+}
+
+.tips-list {
+margin-top: 10px;
+margin-bottom: 0;
+}
+
+/* 焦點提示樣式優化，方便 Tab 鍵檢查 */
+a:focus, button:focus, summary:focus {
+outline: 3px solid #3182ce;
+outline-offset: 2px;
+}
